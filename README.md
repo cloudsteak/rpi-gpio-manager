@@ -85,6 +85,26 @@ done!
 
 ## Run Code
 
+1. Configure the pins
+
+Create the following environment variables with the correct values:
+
+```bash
+RELAY_CHANNEL_COUNT=2
+RELAY_PIN_1=D23
+RELAY_PIN_2=D24
+```
+
+Or create `.env` file where you paste the lines above.
+
+2. Activate venv
+
+```bash
+source env/bin/activate
+```
+
+3. Run the relay tester
+
 Code is located in `src` directory
 
 ```bash
