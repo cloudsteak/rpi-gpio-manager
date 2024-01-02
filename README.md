@@ -9,7 +9,9 @@ Relay manager for Raspberry PI
 - https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/issues/277
 
 
-## Prepare PI 5
+## Prepare PI 5 
+
+### Python 
 
 1. install Python3
 
@@ -38,7 +40,7 @@ python -m venv env --system-site-packages
 source env/bin/activate
 ```
 
-5. Install Adafruit tools
+### Install Adafruit tools
 
 ```bash
 pip3 install --upgrade adafruit-python-shell
@@ -46,5 +48,45 @@ wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/m
 sudo -E env PATH=$PATH python3 raspi-blinka.py
 ```
 
-6. Reboot Pi
+After the reboot the `raspi-blinka.py`` is not necessary anymore.
 
+
+### Check installation
+
+Edit the `blinkatest.py` and modify the pin number in line 11.
+
+Current configuration uses the D23 pin (pin 16/ GPIO 23)
+```python
+pin = digitalio.DigitalInOut(board.D23)
+```
+
+Activate Virtual Environment
+
+```bash
+source env/bin/activate
+```
+
+Then execute the following command:
+
+```bash
+python3 test/blinkatest.py 
+```
+
+You need to see this:
+
+```bash
+Hello blinka!
+Digital IO ok!
+I2C ok!
+SPI ok!
+done!
+```
+
+
+## Run Code
+
+Code is located in `src` directory
+
+```bash
+python3 src/relay-test.py 
+```
