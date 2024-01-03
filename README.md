@@ -1,5 +1,5 @@
 # Raspberry GPIO manager
-Relay manager for Raspberry PI
+GPIO manager for Raspberry PI
 
 
 ## Useful
