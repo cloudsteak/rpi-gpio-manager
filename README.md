@@ -7,6 +7,7 @@ Relay manager for Raspberry PI
 - https://pinout.xyz
 - https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
 - https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/issues/277
+- https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/index.html
 
 
 ## Prepare PI 5 
