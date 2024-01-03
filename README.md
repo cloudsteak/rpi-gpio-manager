@@ -9,8 +9,20 @@ Relay manager for Raspberry PI
 - https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/issues/277
 - https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/index.html
 
+## Dependencies
 
-## Prepare PI 5 
+- Export: 
+
+```bash
+pip3 freeze > requirements.txt
+```
+
+## Prepare Raspberry PI 
+
+Tested on:
+- Raspberry Pi 5
+- Raspberry Pi Zero 2 W
+
 
 ### Python 
 
