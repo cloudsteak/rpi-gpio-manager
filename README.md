@@ -90,6 +90,10 @@ done!
 
 ## Run Code
 
+### Relay test
+
+Location: `src/digitalio/relay-test.py`
+
 1. Configure the pins
 
 Create the following environment variables with the correct values:
@@ -100,7 +104,7 @@ RELAY_PIN_1=D23
 RELAY_PIN_2=D24
 ```
 
-Or create `.env` file where you paste the lines above.
+Or create `.env` file (in repository root directory) where you paste the lines above.
 
 2. Activate venv
 
@@ -119,5 +123,39 @@ pip3 install -r requirements.txt
 Code is located in `src` directory
 
 ```bash
-python3 src/relay-test.py 
+python3 src/digitalio/relay-test.py 
+```
+
+### Led test
+
+Location: `src/digitalio/led-test.py`
+
+1. Configure the pins
+
+Create the following environment variables with the correct values:
+
+```bash
+LED_PIN=D6
+```
+
+Or create `.env` file (in repository root directory) where you paste the lines above.
+
+2. Activate venv
+
+```bash
+source env/bin/activate
+```
+
+3. Install dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+4. Run the relay tester
+
+Code is located in `src` directory
+
+```bash
+python3 src/digitalio/led-test.py 
 ```
