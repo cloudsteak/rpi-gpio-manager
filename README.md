@@ -30,7 +30,11 @@ sudo apt install --upgrade python3-setuptools
 3. Install Virtual Environment
 
 ```bash
-sudo apt install python3.11-venv
+python3 -m pip install --upgrade pip
+pip3 install virtualenv
+```
+
+```bash
 python -m venv env --system-site-packages
 ```
 
@@ -48,7 +52,7 @@ wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/m
 sudo -E env PATH=$PATH python3 raspi-blinka.py
 ```
 
-After the reboot the `raspi-blinka.py`` is not necessary anymore.
+After the reboot the `raspi-blinka.py` is not necessary anymore.
 
 
 ### Check installation
@@ -103,7 +107,13 @@ Or create `.env` file where you paste the lines above.
 source env/bin/activate
 ```
 
-3. Run the relay tester
+3. Install dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+4. Run the relay tester
 
 Code is located in `src` directory
 
