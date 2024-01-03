@@ -1,4 +1,4 @@
-# rpi-relay-manager
+# Raspberry GPIO manager
 Relay manager for Raspberry PI
 
 
