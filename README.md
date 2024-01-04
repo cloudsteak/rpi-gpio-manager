@@ -104,7 +104,7 @@ done!
 
 ### Relay test
 
-Location: `src/digitalio/relay-test.py`
+Location: `src/digitalio/relaytest.py`
 
 1. Configure the pins
 
@@ -135,12 +135,12 @@ pip3 install -r requirements.txt
 Code is located in `src` directory
 
 ```bash
-python3 src/digitalio/relay-test.py 
+python3 src/digitalio/relaytest.py 
 ```
 
 ### Led test
 
-Location: `src/digitalio/led-test.py`
+Location: `src/digitalio/ledtest.py`
 
 1. Configure the pins
 
@@ -169,5 +169,44 @@ pip3 install -r requirements.txt
 Code is located in `src` directory
 
 ```bash
-python3 src/digitalio/led-test.py 
+python3 src/digitalio/ledtest.py 
 ```
+
+### Network stability check
+
+Location: `src/network/stability.py`
+
+1. Configure the pins
+
+Create the following environment variables with the correct values:
+
+```bash
+NETWORK_STABILITY_HOST=8.8.8.8
+NETWORK_STABILITY_PING_INTERVAL=10
+NETWORK_STABILITY_PING_COUNT=0
+NETWORK_STABILITY_THRESHOLD=3
+```
+
+Or create `.env` file (in repository root directory) where you paste the lines above.
+
+2. Activate venv
+
+```bash
+source env/bin/activate
+```
+
+3. Install dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+4. Run network check
+
+Code is located in `src` directory
+
+```bash
+python3 src/network/stability.py 
+```
+
+Solution writes the result to the log file with the following naming convention: `YYYYmmdd-HHMMSS-network.log`

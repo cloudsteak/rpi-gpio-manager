@@ -14,8 +14,6 @@ PIN1 = os.getenv('RELAY_PIN_1')
 print("Get PIN1:", PIN1)
 relay_pin_1 = digitalio.DigitalInOut(getattr(board, PIN1))
 
-
-
 # On/Off Pin1
 relay_pin_1.direction = digitalio.Direction.OUTPUT
 print("PIN1 (",PIN1, ") value:",relay_pin_1.value)
